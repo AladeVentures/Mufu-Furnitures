@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muflad Furnitures</title>
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/material-icons.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<style>
+    header{
+        background: url(assets/img/header6.jpg);
+        min-height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* .gfg{
+        position: relative;
+    }
+    .text-container{
+        position: absolute;
+        background-color: rgba(190, 165, 132, 0.897);
+        left: 45%;
+        top: 92%;
+    } */
+    .img-overlay {
+  position: relative;
+  width:25%;
+}
+
+.img-overlay-image {
+  display: block;
+  width: 180px;
+  height: 130px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+  width: 180px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,.5);
+}
+
+.img-overlay:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+    .btn1{
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        height: 50px;
+        background-color: transparent;
+        width: 200px;
+        /* border-radius: 20px; */
+        color: #3498db;
+        font-size: 1.5em;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    }
+    .btn2{
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.37);
+        background-color: transparent;
+    }
+    .box{
+        /* width: 550px; */ 
+         padding: 20px;
+    }
+    .btn1:hover{
+        background-color: rgba(190, 165, 132, 0.897);
+    }
+/*     
+.img-area{
+  width: 1170px;
+  margin: 2% auto;
+}
+
+.single-img {
+  position: relative;
+  width: 30%;
+  float: left;
+  margin: 0 1%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #144775;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.single-img:hover .img-overlay {
+  height: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-family: poppins;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.text span{
+  font-weight: 300;
+}
+ */
+
+
+</style>
+<body>
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#furnitures">furnitures</a></li>
+              <li><a href="#chair">Chairs</a></li>
+              <li><a href="#bed">Beds</a></li>
+            </ul>
+       <div class="navbar-fixed">    
+        <nav class="">
+            <div class="nav-wrapper white">
+                <a href="" class="sidenav-trigger" data-target="mobile-demo">
+                    <i class="material-icons black-text">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down ">
+                    <li><a class="black-text" href="index.html">Home</a></li>
+                     <li><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Designs<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+                <ul class=" hide-on-med-and-down ">
+                    <!-- <li><a class="black-text" href="index.html" >Search</a></li> -->
+                    <a href="https://form.jotform.com/232903195686566" target="_blank" class="btn btn1 black-text">ORDER</a>
+                </ul>
+            </div>
+        </nav>
+        
+        </div>
+        <ul class="sidenav" id="mobile-demo">
+          <li><a class="black-text" href="index.html">Home</a></li>
+          <a href="https://form.jotform.com/232903195686566" target="_blank" class="btn btn1 black-text">ORDER</a>
+          <li><a href="#furnitures">furnitures</a></li>
+          <li><a href="#chair">Chairs</a></li>
+          <li><a href="#bed">Beds</a></li>
+      </ul>
+
+        <header class="gfg">
+            <!-- <div class="text-container">
+                 <a href="" class="btn-large black center-align">MORE</a>
+                 <div class="box">
+                    <b><p>Crafted by hand & made from sustainable wooden materials</p></p></b>
+                    <a href="" class="btn black-text btn2">view more</a>
+                 </div>
+            </div> -->
+        </header>
+
+     <div class="container" id="furnitures" style="padding: 50px;">
+        <div class="row">
+            <div class="col l3 m6 s12">
+                <img src="assets/img/besidetables.jpg" alt="" class="responsive-img">
+                <p>Beside Tables</p>
+            </div>
+            <div class="col l3 m6 s12">
+                <img src="assets/img/beds.jpg" alt="" class="responsive-img">
+                <p>Beds</p>
+            </div>
+            <div class="col l3 m6 s12">
+                <img src="assets/img/armschair.jpg" alt="" class="responsive-img">
+                <p>Arms Chair</p>
+            </div>
+            <div class="col l3 m6 s12">
+                <img src="assets/img/besidetables.jpg" alt="" class="responsive-img">
+                <p>Beside Tables</p>
+            </div>
+            <div class="col l3 m6 s12">
+                <img src="assets/img/benches.jpg" alt="" class="responsive-img">
+                <p>Benches</p>
+            </div>
+            <div class="col l3 m6 s12">
+                <img src="assets/img/centre-tables.jpg" alt="" class="responsive-img">
+                <p>Centre-tables</p>
+            </div>
+            <div class="col l3 m6 s12">
+                <img src="assets/img/dinningchairs.jpg" alt="" class="responsive-img">
+                <p>Dinning Chairs</p>
+            </div>
+            <div class="col l3 m6 s12">
+                <img src="assets/img/drawers.jpg" alt="" class="responsive-img">
+                <p>Drawers</p>
+            </div>
+            <center><a href="https://form.jotform.com/232903195686566" target="_blank" class="btn btn1 black-text">ORDER</a></center> 
+        </div>
+
+     </div>
+
+
+      <section id="chair">
+        <section id="sec1">
+            <div class="parallax-container">
+                <div class="parallax">
+                <img src="assets/img/chair8.webp" alt="">
+                </div>
+            </div>
+
+           </section>
+          <div class="container" style="padding: 30px;">
+            <div class="row">
+                <div class="col l3 m6 ">
+                        <!-- <img src="assets/img/chair12.jpg" class ="responsive-img image"> -->
+                        <div class="img-overlay">
+                            <img src="assets/img/chair12.jpg" height="130px" class="img-overlay-image">
+                           <div class="overlay">
+                             <div class="text">Chesterfield Basic Armchair</div>
+                           </div>
+                         </div>
+                </div>
+                <div class="col l3 m6 s12">
+                    <!-- <img src="assets/img/chair13.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/chair13.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Modern Armchair</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l3 m6 s12">
+                    <!-- <img src="assets/img/chair14.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/chair14.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Brown Luxury</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l3 m6 s12">
+                    <!-- <img src="assets/img/chair15.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/chair15.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Adams Armchair</div>
+                       </div>
+                     </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 30px;">
+                <div class="col l3 m6 s12">
+                    <!-- <img src="assets/img/chair16.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/chair16.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Hello World</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l3 m6 s12">
+                    <!-- <img src="assets/img/chair10.webp" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/chair10.webp" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Living room sofa</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l3 m6 s12">
+                    <!-- <img src="assets/img/chair1.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/chair1.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Brown five seater</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l3 m6 s12">
+                    <!-- <img src="assets/img/chair8.webp" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/chair8.webp" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Lounge chair</div>
+                       </div>
+                     </div>
+                </div>
+            </div>
+            <center><a href="https://form.jotform.com/232903195686566" target="_blank" class="btn btn1 black-text">ORDER</a></center>
+          </div> 
+      </section>
+      
+      
+      <section id="bed">
+        <section id="sec2">
+            <div class="parallax-container">
+                <div class="parallax">
+                <img src="assets/img/bed-para2.webp" alt="">
+                </div>
+            </div>
+
+           </section>
+          <div class="container" style="padding: 100px;">
+            <div class="row">
+                <div class="col l4 m6 s12">
+                    <!-- <img src="assets/img/bed1.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/bed1.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Morrison Bed</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <!-- <img src="assets/img/bed11.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/bed11.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Diamond sofa cloud</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <!-- <img src="assets/img/bed12.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/bed12.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Caracole sleeping beauty bed</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <!-- <img src="assets/img/bed13.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/bed13.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Empire Bed</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <!-- <img src="assets/img/beds.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/beds.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Mariner</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <!-- <img src="assets/img/chair10.webp" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/storage-bed.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Storage Bed</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <!-- <img src="assets/img/chair1.jpg" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/kids-bed.jpg" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Kids Bed</div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <!-- <img src="assets/img/chair8.webp" alt="" class="responsive-img"> -->
+                    <div class="img-overlay">
+                        <img src="assets/img/bunk-beds.jpg" height="130px" class="img-overlay-image">
+                       <div class="overlay">
+                         <div class="text">Bunk-beds</div>
+                       </div>
+                     </div>
+                </div>
+            </div>
+            <center><a href="https://form.jotform.com/232903195686566" target="_blank" class="btn btn1 black-text">ORDER</a></center>
+          </div> 
+      </section>
+      <section id="bed"></section>
+    <!-- <header class="gfg">
+        <div class="text-container">
+             <a href="" class="btn-large black center-align">MORE</a>
+             <div class="box">
+                <b><p>Crafted by hand & made from sustainable wooden materials</p></p></b>
+                <a href="" class="btn black-text btn2">view more</a>
+             </div>
+        </div>
+    </header> -->
+
+      <!-- footer -->
+      <footer class="page-footer" style="background-color: rgba(190, 165, 132, 0.897);">
+        <div class="container">
+          <div class="row">
+            <div class="col l5 s12">
+    
+              <h5 class="white-text">Connect</h5>
+              <p>If you need a trustworthy furniture company,who works with integrity and gets the accurate work done.Feel free to contact us at our various socialmedia platforms. </p>
+            </div>
+            <div class="col l4 offset-l2 s12"><br>
+    
+              <ul>
+                <li><a href="#!" target="_blank" class=" btn-floating btn-small blue darken-2" data-position="bottom"
+                    data-tooltip="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a> mufutau.alade.3</li><br>
+                <li><a href="#!" target="_blank" class=" btn-floating btn-small blue darken-2" data-position="bottom"
+                    data-tooltip="Facebook">
+                    <i class="fab fa-whatsapp"></i>
+                  </a> 08028158559</li><br>
+                <li><a href="#!" class=" btn-floating btn-small blue darken-2" target="_blank" data-position="bottom"
+                    data-tooltip="phone">
+                    <i class="fas fa-mobile"></i>
+                  </a>08028158559</li>
+              </ul>            </div>
+          </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+          <div class="container center-align">&copy; 2023 Muflad Furnitures</div>
+        </div>
+      </footer>
+</body>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+    $('.collapsible').collapsible();
+        $(".dropdown-trigger").dropdown({ hover: true });
+        $('.scrollspy').scrollSpy();
+    $('.fixed-action-btn').floatingActionButton();
+    $('.modal').modal();
+    $('.datepicker').datepicker();
+    $('.timepicker').timepicker();
+    $('.tabs').tabs();
+    });
+   </script>
+</html>
